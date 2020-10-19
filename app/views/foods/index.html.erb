@@ -1,9 +1,9 @@
-<h1>Results: <%= @foods.count %></h1>
-<% @parks.each do |park| %>
+<h1>Results: <%= @total_results %></h1>
+<% @foods.each do |food| %>
   <ul class="foods">
-    <ul class="code">Code: <%= park.code %></ul>
-    <ul class="description">Description: <%= park.description %></ul>
-    <ul class="brand">Brand: <%= park.brand %></ul>
-    <ul class="ingredients">Ingredients<%= park.ingredients %></ul>
+    <ul class="code">Code: <%= food.code %></ul>
+    <ul class="description">Description: <%= food.description %></ul>
+    <ul class="brand">Brand: <%= food.brand %></ul>
+    <ul class="ingredients">Ingredients<%= food.ingredients %></ul>
   </ul>
 <% end %>
