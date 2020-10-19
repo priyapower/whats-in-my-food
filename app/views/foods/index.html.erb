@@ -1,4 +1,5 @@
-<h1>Results: <%= @total_results %></h1>
+<h1>Results: <%= @foods.first.results_count %></h1>
+<h3>First Ten Results</h3>
 <% @foods.each do |food| %>
   <ul class="foods">
     <ul class="code">Code: <%= food.code %></ul>

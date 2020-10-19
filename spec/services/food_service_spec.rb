@@ -6,8 +6,9 @@ describe FoodService do
         search = FoodService.foods_by_keyword("sweet potatoes")
         expect(search).to be_a Hash
         expect(search[:foods]).to be_an Array
-        food_data = search[:foods].first
+        expect(search[:totalHits]).to be_an Integer
 
+        food_data = search[:foods].first
         expect(food_data).to have_key :fdcId
         expect(food_data[:fdcId]).to be_an(Integer)
 
