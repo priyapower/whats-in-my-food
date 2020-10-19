@@ -1,0 +1,9 @@
+<h1>Results: <%= @foods.count %></h1>
+<% @parks.each do |park| %>
+  <ul class="foods">
+    <ul class="code">Code: <%= park.code %></ul>
+    <ul class="description">Description: <%= park.description %></ul>
+    <ul class="brand">Brand: <%= park.brand %></ul>
+    <ul class="ingredients">Ingredients<%= park.ingredients %></ul>
+  </ul>
+<% end %>
